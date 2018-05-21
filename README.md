@@ -4,7 +4,7 @@
 請參賽者利用求職者的搜尋條件、點擊紀錄、工作內容，預測求職者點擊哪個工作的機會最高。
 
 ## 活動網址
-https://www.104.com.tw/2018hackathon/
+https://www.104.com.tw/hackathon/2018/
 
 ## 主題說明
 比賽當天，將備有 Testing Data，讓參賽隊伍能夠藉由從 Training Data 來預測求職者在搜尋條件下將點擊哪個工作，產生一個最佳的列表排序，主辦單位將會透過計分綱址來告知參賽者推薦排序結果之分數(Normalized Discounted Cumulative Gain)，作為評分標準。
