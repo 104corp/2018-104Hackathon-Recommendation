@@ -2,6 +2,7 @@
 | Name       | Description                | Sample      |
 | :--------: | :------------------------: | :---------: |
 | custno     | 公司代碼                   |             |
+| invoice    | 公司統編                   |             |
 | name       | 公司名稱                   |             |
 | profile    | 公司簡介                   |             |
 | management | 經營理念                   |             |
