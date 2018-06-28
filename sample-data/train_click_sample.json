@@ -1,13 +1,3 @@
-{"jobno":"10000835","date":"1527566791000","action":"viewJob","source":"web"}
-{"jobno":"10000835","date":"1526357145000","action":"viewJob","source":"web"}
-{"jobno":"10000835","date":"1526359940000","action":"viewJob","source":"mobileWeb"}
-{"jobno":"9603745","date":"1526877314000","action":"saveJob","source":"web"}
-{"jobno":"9603745","date":"1527653404000","action":"viewJob","source":"web"}
-{"jobno":"9926223","date":"1525659300000","action":"viewJob","source":"mobileWeb"}
-{"jobno":"7396086","date":"1525659953000","action":"viewJob","source":"app","device":"android"}
-{"jobno":"7396086","date":"1525658788000","action":"applyJob","source":"web"}
-{"jobno":"10361154","date":"1526011986000","action":"viewJob","source":"web"}
-{"jobno":"10361154","date":"1525779400000","action":"viewJob","source":"web"}
 {"jobno": "5314432", "date": "1527330445000", "action": "clickJob", "source": "web", "joblist": ["5314432", "3494303", "3859882", "4439691", "7416542", "7484247", "9063545", "8318922", "9431734", "9127494", "9904656", "9926223", "9950320", "10079727", "10378122", "6830159", "6856925", "10343328", "9730978", "8510715"], "querystring": "ro=0&jobcat=2005003003%2C2005003002%2C2005003005&kwop=7&keyword=%E6%97%A5%E6%96%87&area=6001001000%2C6001005000&order=1&asc=0&mode=s&jobsource=n104bank1"}
 {"jobno": "9752404", "date": "1526025665000", "action": "clickJob", "source": "web", "joblist": ["9661707", "10206086", "9752402", "9752404", "6572519", "6616990", "6884082", "8210542", "8210560", "9285450", "6547843", "9056121", "10351973", "8996291", "10256515", "10179441", "9830381", "7526521", "10027791", "8284471"], "querystring": "ro=0&keyword=IOS&area=6001016000&order=1&asc=0&kwop=7&mode=s&jobsource=n104bank1"}
 {"jobno": "10390361", "date": "1526879339000", "action": "clickJob", "source": "web", "joblist": ["9191097", "10390361", "5266077", "5266131", "10390453", "10358519", "10192704", "10357873", "10269272", "10060504", "9863087", "9908644", "9144675", "9907457", "9907469", "9912957", "9913258", "9914885", "9917002", "10108336"], "querystring": "ro=0&isnew=0&keyword=%E4%BD%9C%E6%A5%AD%E5%93%A1%20&area=6001002021&order=1&asc=0&kwop=7&mode=s&jobsource=n104bank1"}

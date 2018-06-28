@@ -14,8 +14,10 @@ https://www.104.com.tw/hackathon/2018/
     + File: train-action.json / train-click.json
     + Description: 求職者在104網站上瀏覽應徵職務時的行為log
     + Date: 2018-05
-    + [User Log Schema](data-schema/user_log_schema.md)
-    + [User Log Sample](sample-data/user_log_sample.json)
+    + [train-action schema](data-schema/train_action_schema.md)
+    + [train-action sample](sample-data/train_action_sample.json)
+    + [train-click schema](data-schema/train_click_schema.md)
+    + [train-click sample](sample-data/train_click_sample.json)
     + [資料集下載連結](2018-104-hackathon-dataset.md)
 * 公司與職務資料
     + 企業基本資料
