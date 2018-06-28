@@ -12,7 +12,7 @@ https://www.104.com.tw/hackathon/2018/
 ## 資料集說明
 * 104求職者去識別化行為記錄
     + File: train-action.json / train-click.json
-    + Description：求職者在104網站上瀏覽應徵職務時的行為log
+    + Description: 求職者在104網站上瀏覽應徵職務時的行為log
     + Date: 2018-05
     + [User Log Schema](data-schema/user_log_schema.md)
     + [User Log Sample](sample-data/user_log_sample.json)
@@ -56,19 +56,21 @@ https://www.104.com.tw/hackathon/2018/
 
 * 相關資訊連結
     + Testset下載: [testset-click](2018-104-hackathon-dataset.md)
-    + 上傳範例下載：[submit-sample.json](2018-104-hackathon-dataset.md) (用瀏覽起下載時，請忽略自動開啟json產生的錯誤，自行右鍵另存檔案即可)
-    + 比賽當天的Leader Board及上傳網址：https://hackathon2018.events.104.com.tw (參賽隊伍當天報到時將會拿到該隊登入Leader Board所需的帳號密碼)
+    + 上傳範例下載: [submit-sample.json](2018-104-hackathon-dataset.md) (用瀏覽起下載時，請忽略自動開啟json產生的錯誤，自行右鍵另存檔案即可)
+    + 比賽當天的Leader Board及上傳網址: https://hackathon2018.events.104.com.tw (參賽隊伍當天報到時將會拿到該隊登入Leader Board所需的帳號密碼)
 
 ## 評分標準
 * 推薦結果 70%
     + Metrics: Normalized discounted cumulative gain (NDCG) [Wiki](https://en.wikipedia.org/wiki/Discounted_cumulative_gain)
         - 此次競賽我們使用 NDCG 作為評價結果的指標，因此將預測會被點擊的工作排在list的愈前端，可以得到愈高的分數，公式參考Wiki的定義如下:
 
-          ![](images/ndcg.png)
-
           ![](images/dcg.png)
 
           ![](images/idcg.png)
+
+          ![](images/ndcg.png)
+
+        - 此次競賽中，nDCG使用jobno被點擊次數作為相關性分數(relevance)，例如若同一個joblist中，某個jobno被點擊了兩次，則relevance分數為2。
 
 * 設計方法 30%（包含簡報內容、演算法設計、資料闡釋與分析等）
 
