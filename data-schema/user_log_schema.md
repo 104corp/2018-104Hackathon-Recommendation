@@ -1,12 +1,15 @@
-| Name            | Description               | Comment                                                                                                                                               |
-| :-------------: | :-----------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: |
-| action          | 瀏覽104時的行為記錄       | clickJob:點擊列表職務 clickSave:點擊列表儲存 clickApply:點擊列表應徵 clickCust:點擊列表公司 viewJob:瀏覽職務 applyJob:應徵職務 saveJob:儲存職務 viewCust:瀏覽公司 (註1)      |
-| jobNo           | 職務代碼                  | 被點擊的工作                                                                                                                                          |
-| date            | 此筆log的時間戳記         | unixtime(millisecond)                                                                                                                                 |
-| joblist         | 工作列表                  | 以","為分隔的工作列表 (viewJob, saveJob, applyJob, viewCust無此欄位)                                                                                  |
-| querystring     | 網址參數                  | 載入工作列表的網址參數(註1) (viewJob, saveJob, applyJob, viewCust無此欄位)                                                                            | 
+| Name            | Description               | Comment                                                                                                                                     |
+| :-------------: | :-----------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: |
+| action          | 瀏覽104時的行為記錄       | clickJob:點擊列表職務 clickSave:點擊列表儲存 clickApply:點擊列表應徵 viewJob:瀏覽職務 applyJob:應徵職務 saveJob:儲存職務 (註1)              |
+| jobno           | 職務代碼                  | 被點擊的工作                                                                                                                                |
+| date            | 此筆log的時間戳記         | unixtime(millisecond)                                                                                                                       |
+| joblist         | 工作列表                  | 以","為分隔的工作列表 (viewJob, saveJob, applyJob 無此欄位)                                                                                 |
+| querystring     | 網址參數                  | 載入工作列表的網址參數(註1) (viewJob, saveJob, applyJob 無此欄位)                                                                           | 
+| source          | 產品名稱                  | app / web / mobileWeb (clickJob, clickSave, clickApply的來源皆為web)                                                                        | 
+| device          | app裝置系統               | ios / android (clickJob, clickSave, clickApply的來源皆為web，因此無此欄位)                                                                  | 
 
-* 註1: clickJob, clickSave, clickApply為網頁搜尋列表的點擊行為，viewJob, saveJob, applyJob, viewCust是網站上其他動線的行為(包含搜尋)
+
+* 註1: clickJob, clickSave, clickApply為網頁搜尋列表的點擊行為，viewJob, saveJob, applyJob 是網站上其他動線的行為(包含搜尋)
 * 註2: 網址參數說明
 
   + area: 地區
@@ -14,7 +17,6 @@
   + dep: 科系
   + dis_role: 接受身障 (99:是)
   + edu: 學歷
-  + excludeCompanyByCustno: 以公司代碼排除公司
   + excludeCompanyKeyword: 以關鍵字排除公司
   + excludeIndustryCat: 排除產業
   + excludeJobKeyword: 排除職務
