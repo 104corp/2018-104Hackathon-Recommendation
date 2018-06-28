@@ -16,7 +16,7 @@
   + asc: 排序 (0:降冪, 1:升冪)
   + dep: 科系
   + dis_role: 接受身障 (99:是)
-  + edu: 學歷
+  + edu: 學歷 (1:高中職以下 2:高中職 3:專科 4:大學 5:碩士 6:博士)
   + excludeCompanyKeyword: 以關鍵字排除公司
   + excludeIndustryCat: 排除產業
   + excludeJobKeyword: 排除職務

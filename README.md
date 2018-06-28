@@ -7,29 +7,29 @@
 https://www.104.com.tw/hackathon/2018/
 
 ## 主題說明
-比賽當天，將備有 Testing Data，讓參賽隊伍能夠藉由從 Training Data 來預測求職者在搜尋條件下將點擊哪個工作，產生一個最佳的列表排序，主辦單位將會透過計分綱址來告知參賽者推薦排序結果之分數(Normalized Discounted Cumulative Gain)，作為評分標準。
+參賽隊伍將藉由 Training Data 來預測求職者在搜尋條件下將點擊哪個工作，產生一個最佳的列表排序，上傳leaderboard後，可以得知該次上傳的推薦排序結果之NDCG(Normalized Discounted Cumulative Gain)分數，並作為比賽的評分標準之一。
 
 ## 資料集說明
 * 104求職者去識別化行為記錄
-    + File: user_log.json
+    + File: train-action.json / train-click.json
     + Description：求職者在104網站上瀏覽應徵職務時的行為log
     + Date: 2018-05
     + [User Log Schema](data-schema/user_log_schema.md)
     + [User Log Sample](sample-data/user_log_sample.json)
-    + 實際資料集將另行公佈
+    + [資料集下載連結](2018-104-hackathon-dataset.md)
 * 公司與職務資料
     + 企業基本資料
-        - File: companies.json
+        - File: company.json
         - Decription: 資料集中所使用的公司資料
         - [Company Schema](data-schema/companies_schema.md)
         - [Company Sample](sample-data/companies_sample.json)
-        - 實際資料集將另行公佈
+        - [資料集下載連結](2018-104-hackathon-dataset.md)
     + 職務資料
-        - File: job_info.json
+        - File: job.json
         - Description: 每一筆職務的欄位資料與該職務的文字描述
         - [Job Info Schema](data-schema/job_info_schema.md)
         - [Job Info Sample](sample-data/job_info_sample.json)
-        - 實際資料集將另行公佈
+        - [資料集下載連結](2018-104-hackathon-dataset.md)
     + 類目資料
         - File:
             - 科系類目: department.csv [Sample](sample-data/department_sample.csv)
@@ -37,17 +37,17 @@ https://www.104.com.tw/hackathon/2018/
             - 產業類目: industry.csv [Sample](sample-data/industry_sample.csv)
             - 職務類目: job_category.csv [Sample](sample-data/job_category_sample.csv)
         - Description: 在職務結構化欄位中的類目對照
-        - 實際資料集將另行公佈
+        - [資料集下載連結](2018-104-hackathon-dataset.md)
 
 ## 規則說明與範例
-* 比賽當天，Recommendation的參賽者將會另外拿到testset-clicklog和testset-joblist，其中testset-clicklog新增id欄位方便辨識，並移除clicklist欄位，testset-joblist的schema與train-joblist相同。參賽者可使用traini    ng-set訓練出的排序模型，預測user的點擊行為(clickJob, clickSave, clickApply皆視為點擊)，並將點擊率愈高的job排序在愈前面。
+* Recommendation的參賽者除了training set外，仍須下載testset-click，testset中新增id欄位方便計算分數時辨識，並移除jobno欄位作為主辦單位計算NDCG時的依據。參賽者可使用training set訓練排序模型，預測使用者的點擊行為(clickJob, clickSave, clickApply皆視為點擊)，並將點擊率愈高的jobno排序在愈前面。
     + 參賽者會拿到的上傳範例如下：
     ```
     {"id": 1, "joblist": ["10000123", "60000456", ...], "querystring": "ro=0&keyword=%E5%80%89%E5%BA%A..."}
     {"id": 2, "joblist": ["19000611", "21700145", ...], "querystring": "ro=0&keyword=%E6%B3%95%E5%8B%9..."}
     ...
     ```
-    + 預測結果後於joblist欄位填入重新排序結果再上傳，每一隊當天有 __十次__ 的上傳次數限制，上傳後可以得到該次上傳的分數，若排名進前七名則會顯示在Leader Board上。
+    + 預測結果後請參考submit-sample.json的格式，於joblist欄位填入重新排序結果再上傳，每一隊當天有 __十次__ 的上傳次數限制，上傳後可以得到該次上傳的分數，若排名進前七名則會顯示在Leader Board上。
     ```
     {"id": 1, "joblist": ["60000456", "10000123", ...]}
     {"id": 2, "joblist": ["21700145", "19000611", ...]}
@@ -55,9 +55,9 @@ https://www.104.com.tw/hackathon/2018/
     ```
 
 * 相關資訊連結
-    + Testing set：比賽前一天以Email通知參賽者下載連結
-    + 上傳範例：比賽前一天以Email通知參賽者下載連結
-    + Leader Board及上傳網址：https://hackathon2018.events.104.com.tw
+    + Testset下載: [testset-click](2018-104-hackathon-dataset.md)
+    + 上傳範例下載：[submit-sample.json](2018-104-hackathon-dataset.md) (用瀏覽起下載時，請忽略自動開啟json產生的錯誤，自行右鍵另存檔案即可)
+    + 比賽當天的Leader Board及上傳網址：https://hackathon2018.events.104.com.tw (參賽隊伍當天報到時將會拿到該隊登入Leader Board所需的帳號密碼)
 
 ## 評分標準
 * 推薦結果 70%
