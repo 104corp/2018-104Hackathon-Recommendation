@@ -29,8 +29,8 @@ https://www.104.com.tw/hackathon/2018/
     + 職務資料
         - File: job.json
         - Description: 每一筆職務的欄位資料與該職務的文字描述
-        - [Job Info Schema](data-schema/job_info_schema.md)
-        - [Job Info Sample](sample-data/job_info_sample.json)
+        - [Job Schema](data-schema/job_info_schema.md)
+        - [Job Sample](sample-data/job_info_sample.json)
         - [資料集下載連結](2018-104-hackathon-dataset.md)
     + 類目資料
         - File:
