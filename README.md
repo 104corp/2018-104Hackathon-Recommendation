@@ -57,7 +57,7 @@ https://www.104.com.tw/hackathon/2018/
     ```
 
 * 相關資訊連結
-    + Testset下載: [testset-click](2018-104-hackathon-dataset.md)
+    + Testset下載: [testset-click](2018-104-hackathon-dataset.md) (Date: 2018-06)
     + 上傳範例下載: [submit-sample.json](2018-104-hackathon-dataset.md) (用瀏覽起下載時，請忽略自動開啟json產生的錯誤，自行右鍵另存檔案即可)
     + 比賽當天的Leader Board及上傳網址: https://hackathon2018.events.104.com.tw (參賽隊伍當天報到時將會拿到該隊登入Leader Board所需的帳號密碼)
 
