@@ -72,7 +72,7 @@ https://www.104.com.tw/hackathon/2018/
 
           ![](images/ndcg.png)
 
-        - 此次競賽中，nDCG使用jobno被點擊次數作為相關性分數(relevance)，例如若同一個joblist中，某個jobno被點擊了兩次，則relevance分數為2。
+        - 此次競賽中，nDCG使用jobno被點擊(包含clickJob, clickSave, clickApply)的次數作為相關性分數(relevance)，例如若同一個joblist中，某個jobno被點擊了兩次，則relevance分數為2。
 
 * 設計方法 30%（包含簡報內容、演算法設計、資料闡釋與分析等）
 
