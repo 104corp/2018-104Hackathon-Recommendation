@@ -19,7 +19,7 @@
   + excludeCompanyKeyword: 以關鍵字排除公司
   + excludeIndustryCat: 排除產業
   + excludeJobKeyword: 排除職務
-  + expcat: 經歷要求
+  + expcate: 經歷要求
   + indcat: 產業
   + isnew: 工作更新日 (0:本日最新, 3:三日內, 7:一週內, 14:二週內, 30:一個月內)
   + jobcat / cat: 職務類別
